@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        int n,square,temp,count=1;
+        
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        temp=n;
+        square=n*n;
+        while(n!=0)
+        {
+            count=count*10;
+            n=n/10;
+        }
+        if(square%count==temp)
+
+        System.out.println("yes");
+        else
+        System.out.println("No");
+    }
+}
